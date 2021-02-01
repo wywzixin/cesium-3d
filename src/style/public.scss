@@ -1,0 +1,315 @@
+@import './animate.scss';
+.fill {
+    width: 100%;
+    height: 100%;
+}
+.p-e_none {
+    pointer-events: none;
+}
+.p-e_auto {
+    pointer-events: auto;
+}
+.t_l {
+    text-align: left;
+}
+.t_r {
+    text-align: right;
+}
+.t_c {
+    text-align: center;
+}
+.u_s_none {
+    user-select: none;
+}
+.t_color {
+    color: #bbbbbb;
+}
+.v_t {
+    vertical-align: top;
+}
+.v_m {
+    vertical-align: middle;
+}
+
+.cursor_move {
+    cursor: move;
+}
+.el-tree {
+    color: #fff;
+    background-color: transparent;
+    margin-top: 1.5vh;
+}
+/*点击节点颜色*/
+.el-tree-node:focus > .el-tree-node__content {
+    background-color: rgba(20, 62, 141, 0.5);
+}
+.el-tree-node__content {
+    height: 2.8vh;
+}
+
+/*悬浮节点颜色样式*/
+.el-tree-node__content:hover {
+    background-color: rgba(20, 62, 141, 0.5);
+}
+
+.el-tree-node__content > .el-tree-node__expand-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.6vh;
+}
+.el-tree-node__content > .el-tree-node__label {
+    font-size: 1.6vh;
+}
+.el-tree-node__content > label.el-checkbox {
+    margin-right: 0.5vw;
+}
+
+.el-checkbox__inner {
+    border: 0.1vh solid #dcdfe6;
+    border-radius: 0.2vh;
+    width: 1.5vh;
+    height: 1.5vh;
+    z-index: unset;
+    &::after {
+        height: 0.5vh;
+        top: 0.2vh;
+        border: 0.2vh solid #fff;
+        border-left: 0;
+        border-top: 0;
+        left: 0.26vh;
+        width: 0.26vw;
+    }
+}
+.el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    height: 0.4vh;
+    transform: scale(0.5);
+    left: 0;
+    right: 0;
+    top: 0.5vh;
+}
+
+.bg-color {
+    background-color: rgba(16, 34, 67, 0.9);
+}
+.border-normal {
+    border: 1.2px solid rgba(96, 118, 173, 0.7);
+}
+.shadowColor {
+    box-shadow: 2px 2px 7px rgba(39, 39, 39, 0.95);
+}
+.br4 {
+    border-radius: 4px;
+}
+.mb60 {
+    margin-bottom: 60%;
+}
+.mb10 {
+    margin-bottom: 10%;
+}
+.mt5 {
+    margin-top: 5%;
+}
+.ml20 {
+    margin-left: 20px;
+}
+.mr0 {
+    margin-right: 0vw;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.b0 {
+    border: unset;
+}
+.border-active {
+    border: 0.08vw solid rgba(42, 157, 183, 0.3);
+}
+.df {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+// .custom-scroll-bar {
+::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 0.3vw; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 0;
+}
+::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 2px;
+    -webkit-box-shadow: inset 0 0 5px #1d9b9e;
+    background: #1d9b9e;
+}
+::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    width: 5px;
+    background: rgba(0, 0, 0, 0.1);
+}
+// }
+
+/* 表格 */
+.el-table {
+    color: #fff;
+    background-color: unset !important;
+    border: 1px solid rgba(96, 118, 173, 0.3);
+    width: 100%;
+    margin-top: 10px;
+}
+.el-table th,
+.el-table tr,
+.el-table td {
+    border: 1px solid rgba(96, 118, 173, 0.3);
+}
+.el-table th,
+.el-table tr {
+    background-color: unset !important;
+    color: #fff;
+    font-size: 12px;
+}
+.el-table .el-table__header-wrapper tr {
+    background-color: #102243 !important;
+}
+.el-table .cell {
+    line-height: 20px;
+    text-align: center;
+    white-space: pre-line;
+}
+.el-table td.gutter,
+.el-table th.gutter {
+    display: none;
+}
+.el-table th.is-leaf {
+    border-bottom: 1px solid rgba(96, 118, 173, 0.3);
+}
+.el-table .el-table--border::after,
+.el-table .el-table--group::after,
+.el-table .el-table::before {
+    background-color: rgba(96, 118, 173, 0.3);
+}
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+    background-color: #65470c !important;
+}
+.el-table--border::after,
+.el-table--group::after,
+.el-table::before {
+    background-color: unset;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+    background: rgba(23, 51, 107, 0.4);
+}
+
+.el-input {
+    box-sizing: border-box;
+}
+.el-input input {
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(16, 34, 67, 0.5);
+    color: #fff;
+    border: 1px solid rgba(96, 118, 173, 0.35);
+}
+
+// .el-button {
+//     background-image: url('~@/assets/img/background/button.png');
+//     background-size: 100% 100%;
+//     background-color: unset;
+//     color: #fff;
+//     border: none;
+//     text-align: center;
+//     font-size: 12px;
+//     padding: 5px 10px;
+// }
+
+.el-button:focus,
+.el-button:hover {
+    color: #409eff;
+    background-color: unset;
+}
+
+.el-button--mini,
+.el-button--mini.is-round {
+    padding: 7px 15px !important;
+}
+
+.el-row {
+    color: #fff;
+}
+
+.el-textarea__inner {
+    background-color: rgba(16, 34, 67, 0.5);
+    border: 1px solid rgba(96, 118, 173, 0.35);
+}
+.el-slider {
+    width: 95%;
+    margin: auto;
+    padding-bottom: 8px;
+    .el-slider__marks-text {
+        color: #fff;
+    }
+    .el-slider__runway {
+        height: 2px;
+        margin: 17px 0;
+    }
+
+    .el-slider__bar {
+        height: 2px;
+        background: rgba(47, 213, 255, 1);
+    }
+
+    .el-slider__button {
+        width: 13px;
+        height: 13px;
+        background: rgba(47, 213, 255, 1) !important;
+    }
+}
+
+.el-input-number.is-controls-right {
+    .el-input-number__decrease,
+    .el-input-number__increase {
+        background: rgba(23, 51, 107, 0.3);
+        color: #fff;
+        border: none;
+    }
+}
+
+.el-popper[x-placement^='bottom'],
+.el-popper[x-placement^='top'] {
+    background: rgba(0, 20, 32, 0.85);
+    border: 1px solid #0c4f55;
+    .el-date-picker__time-header {
+        border-bottom: 1px solid #273761;
+    }
+    .el-picker-panel__footer {
+        background: rgba(0, 20, 32, 0.85);
+        border: 1px solid #0c4f55;
+    }
+    .el-time-panel.el-popper {
+        background: rgba(0, 20, 32, 0.85);
+        border: 1px solid #0c4f55;
+        .el-time-panel__footer {
+            border-top: 1px solid #273761;
+        }
+    }
+    .popper__arrow::after {
+        border-top-color: rgba(16, 34, 67, 1);
+    }
+    .el-date-table th {
+        border-bottom: unset;
+    }
+    .el-select-dropdown__item {
+        text-align: center;
+        color: #fff;
+        background-color: unset;
+    }
+    .el-select-dropdown__item.hover,
+    .el-select-dropdown__item:hover {
+        color: #00e5fd;
+    }
+}
