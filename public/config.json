@@ -1,11 +1,5 @@
 {
-    "apiUrl": {
-        "tianji": "http://36.112.11.166:8083/ZYY/tianji/#/",
-        "diji": "http://150.129.138.13:29001/",
-        "satsee": "http://satsee.radi.ac.cn:8081/zoomify.html",
-        "satapp": "http://satapp.radi.ac.cn/index_mem.html?username=mem&passwd=mem123",
-        "dianci": "http://www.leos.ac.cn/#/login?redirect=%2FdataService%2FdataDownloadList"
-    },
+    "apiUrl": {},
     "mapService": {},
     "menu": [
         {
@@ -17,31 +11,31 @@
                     "name": "arcgis在线底图",
                     "unit": "西安普适信息技术有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.134.27/chinaEquake/src/landslide/landslide.html"
+                    "url": "http://127.0.0.1/chinaEquake/src/landslide/landslide.html"
                 },
                 {
                     "name": "高德在线底图",
                     "unit": "西安普适信息技术有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.134.27/chinaEquake/src/landslide/landslide.html"
+                    "url": "http://127.0.0.1/chinaEquake/src/landslide/landslide.html"
                 },
                 {
                     "name": "mapbox地图",
                     "unit": "西安普适信息技术有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.134.27/chinaEquake/src/landslide/landslide.html"
+                    "url": "http://127.0.0.1/chinaEquake/src/landslide/landslide.html"
                 },
                 {
                     "name": "WMTS瓦片",
                     "unit": "西安普适信息技术有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.134.27/chinaEquake/src/landslide/landslide.html"
+                    "url": "http://127.0.0.1/chinaEquake/src/landslide/landslide.html"
                 },
                 {
                     "name": "矢量瓦片",
                     "unit": "西安普适信息技术有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.134.27/chinaEquake/src/landslide/landslide.html"
+                    "url": "http://127.0.0.1/chinaEquake/src/landslide/landslide.html"
                 }
             ]
         },
@@ -53,37 +47,37 @@
                     "name": "点聚合",
                     "unit": "西安普适信息技术有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.134.27/chinaEquake/src/inSARs/dztz.html"
+                    "url": ""
                 },
                 {
                     "name": "闪烁点",
                     "unit": "北京天耀宏图科技有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.28.8:8001/index.html"
+                    "url": ""
                 },
                 {
                     "name": "点动态扩散效果",
                     "unit": "北京天耀宏图科技有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.28.8:8001/index.html"
+                    "url": ""
                 },
                 {
                     "name": "雷达扫描",
                     "unit": "北京天耀宏图科技有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.28.8:8001/index.html"
+                    "url": "http://127.0.0.1:8001/index.html"
                 },
                 {
                     "name": "加载几万点",
                     "unit": "北京天耀宏图科技有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.28.8:8001/index.html"
+                    "url": "http://127.0.0.1:8001/index.html"
                 },
                 {
                     "name": "加载gif图片",
                     "unit": "北京天耀宏图科技有限公司",
                     "thumbnail": "1604598220.png",
-                    "url": "http://10.4.28.8:8001/index.html"
+                    "url": "http://127.0.0.1:8001/index.html"
                 }
             ]
         },
@@ -95,13 +89,13 @@
                     "name": "流向动态线",
                     "unit": "北京华云星地通科技有限公司",
                     "thumbnail": "1604652323.jpg",
-                    "url": "http://121.36.13.81:4813/fire"
+                    "url": "http://127.0.0.1:4813/fire"
                 },
                 {
                     "name": "动态线",
                     "unit": "北京华云星地通科技有限公司",
                     "thumbnail": "1604652323.jpg",
-                    "url": "http://121.36.13.81:4813/fire"
+                    "url": "http://127.0.0.1:4813/fire"
                 }
             ]
         },
@@ -113,13 +107,13 @@
                     "name": "动态水面效果",
                     "unit": "北京华云星地通科技有限公司",
                     "thumbnail": "1604652323.jpg",
-                    "url": "http://121.36.13.81:4813/fire"
+                    "url": "http://127.0.0.1:4813/fire"
                 },
                 {
                     "name": "动态立体墙",
                     "unit": "北京华云星地通科技有限公司",
                     "thumbnail": "1604652323.jpg",
-                    "url": "http://121.36.13.81:4813/fire"
+                    "url": "http://127.0.0.1:4813/fire"
                 }
             ]
         },
@@ -131,13 +125,13 @@
                     "name": "测量工具",
                     "unit": "北京华云星地通科技有限公司",
                     "thumbnail": "1604652323.jpg",
-                    "url": "http://121.36.13.81:4813/fire"
+                    "url": "http://127.0.0.1:4813/fire"
                 },
                 {
                     "name": "绘图工具",
                     "unit": "北京华云星地通科技有限公司",
                     "thumbnail": "1604652323.jpg",
-                    "url": "http://121.36.13.81:4813/fire"
+                    "url": "http://127.0.0.1:4813/fire"
                 }
             ]
         },
@@ -149,49 +143,49 @@
                     "name": "加载三维模型",
                     "unit": "环安科技公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://ninh.ihamodel.com/#"
+                    "url": ""
                 },
                 {
                     "name": "在线建筑物数据加载",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": ""
                 },
                 {
                     "name": "加载BIM",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "倾斜摄影分栋单体化",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "倾斜摄影分层单体化",
                     "unit": "倾斜摄影分层单体化",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "倾斜摄影分户单体化",
                     "unit": "倾斜摄影分户单体化",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "矢量白膜",
                     "unit": "倾斜摄影分户单体化",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "3dtiles高度调整",
                     "unit": "倾斜摄影分户单体化",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 }
             ]
         },
@@ -209,31 +203,31 @@
                     "name": "跟随视角漫游",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "第一人称漫游",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "上帝视角漫游",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "绕点环绕飞行",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "开场动画",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 }
             ]
         },
@@ -251,37 +245,37 @@
                     "name": "坡向分析",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "淹没分析",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "可视域分析",
                     "unit": "中科星图股份有限公司",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "地形开挖",
                     "unit": "倾斜摄影分层单体化",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "裁剪分析",
                     "unit": "倾斜摄影分户单体化",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 },
                 {
                     "name": "通视分析",
                     "unit": "倾斜摄影分户单体化",
                     "thumbnail": "1605098881.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/zsfx/#/home"
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 }
             ]
         },
@@ -293,37 +287,37 @@
                     "name": "近地天空盒",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "自定义天空盒",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "自定义空间背景",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "雨雪雾天气效果",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "二三维切换",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "鹰眼",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 }
             ]
         },
@@ -335,13 +329,13 @@
                     "name": "热力图",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "风场图",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 }
             ]
         },
@@ -353,25 +347,25 @@
                     "name": "迁徙图",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "散点图",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "流入图",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "流出图",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 }
             ]
         },
@@ -383,19 +377,19 @@
                     "name": "蜂巢图",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "迁徙图",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 },
                 {
                     "name": "热力图",
                     "unit": "",
                     "thumbnail": "weather.jpg",
-                    "url": "http://36.112.11.166:8083/ZYY/DST"
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
                 }
             ]
         }
