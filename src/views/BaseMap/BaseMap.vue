@@ -23,10 +23,13 @@ export default {
                 case 'arcgis在线底图':
                     this.addArcGISMap();
                     break;
-                case '高德在线底图':
+                case '加载高德地图':
                     this.addGaodeMap();
                     break;
-                case 'mapbox地图':
+                case '加载mapbox地图':
+                    this.addMapboxMap();
+                    break;
+                case '加载矢量瓦片':
                     this.addMapboxMap();
                     break;
             }
