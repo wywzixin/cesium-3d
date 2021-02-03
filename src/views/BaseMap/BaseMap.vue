@@ -6,12 +6,13 @@
 
 <script>
 import GlobeViewer from '@/components/GlobeViewer';
-/* global Cesium */
+// import { MVTProvider } from 'U/mvtProvider';
+/* global Cesium viewer */
 export default {
     data() {
         return {};
     },
-    created() {
+    mounted() {
         this.addBaseMap(this.$route.query.name);
     },
     components: {
@@ -26,13 +27,16 @@ export default {
                 case '高德在线底图':
                     this.addGaodeMap();
                     break;
-                case 'mapbox地图':
+                case '天地图':
                     this.addMapboxMap();
+                    break;
+                case '矢量瓦片':
+                    this.addMvt();
                     break;
             }
         },
         addArcGISMap() {
-            window.viewer.scene.imageryLayers.addImageryProvider(
+            viewer.scene.imageryLayers.addImageryProvider(
                 new Cesium.ArcGisMapServerImageryProvider({
                     url:
                         'https://server.arcgisonline.com/arcgis/rest/services/World_Imagery/MapServer',
@@ -40,14 +44,14 @@ export default {
             );
         },
         addGaodeMap() {
-            window.viewer.scene.imageryLayers.addImageryProvider(
+            viewer.scene.imageryLayers.addImageryProvider(
                 new Cesium.UrlTemplateImageryProvider({
                     url: 'https://webst02.is.autonavi.com/appmaptile?style=6&x={x}&y={y}&z={z}',
                 })
             );
         },
         addMapboxMap() {
-            window.viewer.scene.imageryLayers.addImageryProvider(
+            viewer.scene.imageryLayers.addImageryProvider(
                 new Cesium.WebMapTileServiceImageryProvider({
                     url:
                         'http://t0.tianditu.com/img_w/wmts?service=wmts&request=GetTile&version=1.0.0&LAYER=img&tileMatrixSet=w&TileMatrix={TileMatrix}&TileRow={TileRow}&TileCol={TileCol}&style=default&format=tiles&tk=ebf64362215c081f8317203220f133eb',
@@ -58,6 +62,17 @@ export default {
                     show: false,
                 })
             );
+        },
+        addMvt() {
+            // viewer.scene.globe.baseColor = new Cesium.Color(1.0, 1.0, 1.0, 1.0);
+            // viewer.scene.imageryLayers.addImageryProvider(
+            //     new MVTProvider({
+            //         url:
+            //             'https://a.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/{z}/{x}/{y}.vector.pbf?access_token={k}',
+            //         key:
+            //             'pk.eyJ1IjoibWFyc2dpcyIsImEiOiJja2Fod2xlanIwNjJzMnhvMXBkMnNqcjVpIn0.WnxikCaN2KV_zn9tLZO77A',
+            //     })
+            // );
         },
     },
 };
