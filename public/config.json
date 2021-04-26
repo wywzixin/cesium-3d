@@ -1,6 +1,62 @@
 {
     "apiUrl": {},
-    "mapService": {},
+    "mapService": {
+        "imageryLayers": [
+            {
+                "type": "WMTS",
+                "label": "基础影像",
+                "preloading": true,
+                "layer": {},
+                "provider": {
+                    "url": "http://127.0.0.1:8080/tilecache/service/wmts",
+                    "layer": "image_globle_base-JPEG-4326",
+                    "format": "image/jpeg",
+                    "style": "default",
+                    "maximumLevel": 19,
+                    "tileMatrixSetID": "EPSG:4326",
+                    "projection": "WGS84"
+                }
+            },
+            {
+                "type": "WMTS",
+                "label": "标注图层",
+                "preloading": true,
+                "layer": {},
+                "provider": {
+                    "url": "http://127.0.0.1:8080/tilecache/service/wmts",
+                    "layer": "Global_ImageLabel17-PNG-4326",
+                    "format": "image/png",
+                    "style": "default",
+                    "maximumLevel": 17,
+                    "tileMatrixSetID": "EPSG:4326",
+                    "projection": "WGS84"
+                }
+            },
+            {
+                "type": "WMTS",
+                "label": "黑色底图",
+                "preloading": false,
+                "layer": {},
+                "provider": {
+                    "url": "http://127.0.0.1:8080/tilecache/service/wmts",
+                    "layer": "icenter:blackMarbel2016-PNG-4326",
+                    "format": "image/png",
+                    "style": "default",
+                    "maximumLevel": 17,
+                    "tileMatrixSetID": "EPSG:3857",
+                    "projection": "WebMercator"
+                }
+            }
+        ],
+        "dem": [
+            {
+                "type": "dem",
+                "label": "全球90米地形",
+                "preloading": true,
+                "url": "http://127.0.0.1:8080/tilecache/service/terrain/Global_DEM_18-TERRAIN-4326"
+            }
+        ]
+    },
     "menu": [
         {
             "name": "基础地图",
@@ -8,17 +64,19 @@
             "icon": "dizhen.png",
             "content": [
                 {
-                    "name": "arcgis在线底图",
-                    "unit": ".",
-                    "thumbnail": "arcgis.png"
+                    "name": "加载Arcgis底图",
+                    "thumbnail": "tianditu.png"
                 },
                 {
-                    "name": "高德在线底图",
-                    "unit": ".",
-                    "thumbnail": "gaode.png"
+                    "name": "加载Mapbox底图",
+                    "thumbnail": "tianditu.png"
                 },
                 {
-                    "name": "天地图",
+                    "name": "加载天地图",
+                    "thumbnail": "tianditu.png"
+                },
+                {
+                    "name": "加载WMTS",
                     "unit": ".",
                     "thumbnail": "tianditu.png"
                 },
@@ -68,6 +126,12 @@
                     "unit": ".",
                     "thumbnail": "arcgis.png",
                     "url": "http://127.0.0.1:8001/index.html"
+                },
+                {
+                    "name": "模型移动",
+                    "unit": ".",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8001/index.html"
                 }
             ]
         },
@@ -94,6 +158,12 @@
             "icon": "huozai.png",
             "content": [
                 {
+                    "name": "几何体",
+                    "unit": ".",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:4813/fire"
+                },
+                {
                     "name": "动态水面效果",
                     "unit": ".",
                     "thumbnail": "arcgis.png",
@@ -119,6 +189,12 @@
                 },
                 {
                     "name": "绘图工具",
+                    "unit": ".",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:4813/fire"
+                },
+                {
+                    "name": "卷帘",
                     "unit": ".",
                     "thumbnail": "arcgis.png",
                     "url": "http://127.0.0.1:4813/fire"
@@ -176,6 +252,12 @@
                     "unit": "倾斜摄影分户单体化",
                     "thumbnail": "arcgis.png",
                     "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
+                },
+                {
+                    "name": "改变3dtiles的位置",
+                    "unit": "倾斜摄影分户单体化",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
                 }
             ]
         },
@@ -215,6 +297,24 @@
                 },
                 {
                     "name": "开场动画",
+                    "unit": ".",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
+                },
+                {
+                    "name": "俯仰角",
+                    "unit": ".",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
+                },
+                {
+                    "name": "获取视角信息",
+                    "unit": ".",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
+                },
+                {
+                    "name": "视角飞行",
                     "unit": ".",
                     "thumbnail": "arcgis.png",
                     "url": "http://127.0.0.1:8083/ZYY/zsfx/#/home"
@@ -312,6 +412,48 @@
             ]
         },
         {
+            "name": "粒子效果",
+            "icon": "chengshi.png",
+            "content": [
+                {
+                    "name": "火",
+                    "unit": "",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
+                },
+                {
+                    "name": "爆炸",
+                    "unit": "",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
+                },
+                {
+                    "name": "喷泉",
+                    "unit": "",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
+                }
+            ]
+        },
+        {
+            "name": "智慧城市",
+            "icon": "chengshi.png",
+            "content": [
+                {
+                    "name": "智慧城市",
+                    "unit": "",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
+                },
+                {
+                    "name": "泛光特效",
+                    "unit": "",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
+                }
+            ]
+        },
+        {
             "name": "普通可视化",
             "icon": "chengshi.png",
             "content": [
@@ -323,6 +465,24 @@
                 },
                 {
                     "name": "风场图",
+                    "unit": "",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
+                },
+                {
+                    "name": "台风",
+                    "unit": "",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
+                },
+                {
+                    "name": "全球动态航线",
+                    "unit": "",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
+                },
+                {
+                    "name": "微博点",
                     "unit": "",
                     "thumbnail": "arcgis.png",
                     "url": "http://127.0.0.1:8083/ZYY/DST"
@@ -377,6 +537,18 @@
                 },
                 {
                     "name": "热力图",
+                    "unit": "",
+                    "thumbnail": "arcgis.png",
+                    "url": "http://127.0.0.1:8083/ZYY/DST"
+                }
+            ]
+        },
+        {
+            "name": "其他",
+            "icon": "chengshi.png",
+            "content": [
+                {
+                    "name": "高程夸张",
                     "unit": "",
                     "thumbnail": "arcgis.png",
                     "url": "http://127.0.0.1:8083/ZYY/DST"

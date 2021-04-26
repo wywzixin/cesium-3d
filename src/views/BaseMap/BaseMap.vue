@@ -1,11 +1,11 @@
 <template>
     <div class="base-map">
-        <globe-viewer></globe-viewer>
+        <!-- <globe-viewer></globe-viewer> -->
     </div>
 </template>
 
 <script>
-import GlobeViewer from '@/components/GlobeViewer';
+// import GlobeViewer from '@/components/GlobeViewer';
 // import { MVTProvider } from 'U/mvtProvider';
 /* global Cesium viewer */
 export default {
@@ -13,10 +13,10 @@ export default {
         return {};
     },
     mounted() {
-        this.addBaseMap(this.$route.query.name);
+        // this.addBaseMap(this.$route.query.name);
     },
     components: {
-        GlobeViewer,
+        // GlobeViewer,
     },
     methods: {
         addBaseMap(name) {
